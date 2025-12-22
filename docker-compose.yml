@@ -1,0 +1,21 @@
+services:
+  # Servicio FastAPI (se conecta a PostgreSQL local)
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: unidad_educativa_api
+    ports:
+      - "8000:8000"
+    environment:
+      # Usar host.docker.internal para acceder a localhost desde el contenedor en Windows
+      DATABASE_URL: postgresql://postgres:abcd.1234@host.docker.internal:5432/unidad_educativa
+    volumes:
+      - .:/app
+    command: uvicorn main:app --host 0.0.0.0 --port 8000 --reload
+    networks:
+      - educativa_network
+
+networks:
+  educativa_network:
+    driver: bridge
