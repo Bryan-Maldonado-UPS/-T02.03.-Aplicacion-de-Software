@@ -1,6 +1,6 @@
 ## Distribución de tareas por integrante:
 | Integrante | Rol Técnico | 
-| :--- | :--- | :--- |
+| :--- | :--- |
 | *Kevin Barreno* | • *Infraestructura:* Dockerización del entorno (Dockerfile, docker-compose) y configuración de la base de datos.<br>• *Core:* Desarrollo del BaseRepository (Patrón Repositorio Genérico) y el módulo de *Representantes*. |
 | *Bryan Maldonado* | • *Lógica de Personas:* Implementación de reglas de negocio críticas en services.py (ej. validación de edad mínima en Estudiantes).<br>• *Seguridad de Datos:* Validaciones de unicidad y formato en el módulo de *Docentes*. |
 | *Alejandro Montesdeoca* | • *Estructura Académica:* Modelado y desarrollo de los módulos *Cursos* y *Asignaturas.<br>• **Integridad de Datos:* Implementación de relaciones complejas (Foreign Keys) para vincular la carga académica. |
