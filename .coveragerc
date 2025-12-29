@@ -1,0 +1,15 @@
+[run]
+branch = True
+include =
+    utils.py
+omit =
+    */tests/*
+    */venv/*
+    /usr/*
+    */site-packages/*
+
+[report]
+# Requisito 7.2: Cobertura mínima del 60%
+fail_under = 60
+show_missing = True
+precision = 2
