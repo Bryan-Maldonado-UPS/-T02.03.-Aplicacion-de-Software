@@ -8,6 +8,7 @@ import sys
 import io
 from utils import calcular_promedio
 
+
 # Crear la aplicación FastAPI
 app = FastAPI(
     title="Sistema de Gestión Educativa",
