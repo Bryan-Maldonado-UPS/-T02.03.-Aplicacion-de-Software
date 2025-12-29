@@ -3,7 +3,6 @@ import pytest
 from mockito import when, mock, verify, unstub
 from utils import calcular_promedio, BaseDatosNotas
 
-
 # Requisito 7.3.2: Implementación con Unittest
 class TestCalculoPromedioUnittest(unittest.TestCase):
     def test_promedio_simple(self):
